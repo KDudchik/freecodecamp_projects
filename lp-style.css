@@ -1,0 +1,255 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:#3523aa;
+  }
+  
+  header {
+    top: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width:100%;
+    position:fixed;
+  }
+  
+  .logo > img {
+    max-height:60px;
+    max-width:120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    padding:3px 0;
+  }
+  
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size:15px;
+    color:#a90f0a;
+    font-family:Georgia,serif;
+    font-weight:bold;
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .container {
+    margin:0 120px 0;
+    width:70%;
+    background-color:white;
+    z-index:3;
+  }
+  
+  .nav-link { 
+    text-decoration: none; 
+    color: #3523aa
+  } 
+  
+  .nav-link:visited { 
+    text-decoration: none; 
+  } 
+  .nav-link:hover { 
+    text-decoration: none; 
+    color: #a90f0a;
+  } 
+  
+  .plans {
+    width:70%;
+    max-width:50rem;
+    max-height:100%;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    margin:auto;
+  }
+  
+  .plan {
+    display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      height: 11rem;
+    border: 2px solid #3523aa;
+    border-radius:9px;
+    background-color:white;
+    margin:6px;
+    padding: 1%;
+    font-family:Helvetica, Arial, sans-serif;
+  }
+  
+  .plan > p {
+    color:#3523aa;
+    font-weight:bold;
+    font-size:0.9rem;
+    text-decoration:underline;
+    text-align:center;
+    margin:0;
+    padding:0.2rem;
+  }
+  
+  .plan-list {
+    padding: 0 1.2rem;
+  }
+  
+  .plan-list > li {
+    padding: 2px;
+    font-size: 0.8rem;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight:Bold; 
+    color:#b3b1c2;
+  }
+  
+  .plan > .price {
+    color: #df1009;
+    font-family:Georgia,serif;
+    text-decoration:none;
+    font-size:1.2rem;
+  }
+  
+  h1 {
+    text-align:center;
+    padding:30px 0;
+    padding-bottom:20px;
+    color:white;
+    font-size:2rem;
+  }
+  
+  h2 {
+    text-align:center;
+    padding: 10px 20px 20px;
+    color:white;
+    font-size:1.2rem;
+  }
+  
+  .about {
+    padding: 2px 20px;;
+    font-size: 1rem;
+    font-weight:Bold; 
+    color:#3523aa;
+    width:90%;
+    padding:8px;
+    background-color: white;
+    border-radius:6px;
+    border:1px solid transparent;
+  }
+  
+  
+  .first > ul{
+    list-style-type: none;
+    max-width:50rem;
+  }
+  
+  .first > ul > li{
+    list-style-type: none;
+    padding:10px 6px;
+    margin: 8px 0 ;
+  }
+  
+  .first {
+    text-align:center;
+    margin-top:70px;
+  }
+  
+  .on-image {
+    font-size:50px;
+    text-align: center;
+    text-shadow: 0 0 3px rgb(245, 184, 184);
+  }
+  
+  iframe {
+    display: flex;
+    align-items: center;
+  }
+  
+  form {
+    display:flex;
+    flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    margin-top:20px;
+    margin-bottom: 50px;
+    z-index:1;
+  }
+  
+  .embed-submit-field {
+    position: relative;
+    background-color:white;
+    border-radius:6px;
+    input {
+      padding: 10px;
+      border-radius:6px;
+      border:1px solid transparent;
+      margin:3px;
+      text-align:center;
+    }
+    .submit {
+      right: 10px;
+      top: 7px;
+      font-weight: bold;
+      background-color: #df1009;
+      color:white;
+    }
+    .submit:hover {
+      background-color: #3523aa;
+      cursor: pointer;
+    }
+  }
+  
+  .footer-div {
+    height:50px;
+  }
+  
+  .red {
+    color:#df1009;
+    font-size:1.2rem;
+    font-family:Helvetica, Arial, sans-serif;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight:Bold; 
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin:0 auto;
+  }
+  
+  
+  @media only screen and (max-width: 720px) {
+    .plans {
+      max-width: 1fr;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    .plans {
+      max-width: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .on-image {
+      font-size:40px;
+    }
+    .first > ul{
+    max-width:20rem;
+  }
+  }
